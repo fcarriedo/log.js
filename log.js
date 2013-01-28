@@ -13,6 +13,9 @@ var log = (function(levl, useAlert) {
     case 'debug':
       level = 3;
       break;
+    case 'mute':
+      level = -1;
+      break;
   }
 
   var useAlert = !!useAlert;
